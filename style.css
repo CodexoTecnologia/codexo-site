@@ -97,7 +97,7 @@ section {
 .navbar {
     background-color: rgba(22, 22, 26, 0.8);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -111,17 +111,26 @@ section {
     align-items: center;
 }
 
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
 .navbar .logo img {
-    height: 40px;
+    height: 55px;
+    display: block;
 }
 
 .nav-links ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links li {
     margin-left: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
@@ -352,8 +361,16 @@ section {
         padding: 2rem 0;
     }
     
+    .nav-links.active ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
     .nav-links.active li {
         margin: 1rem 0;
+        width: 100%;
+        text-align: center;
     }
     
     .services-grid {
@@ -535,17 +552,6 @@ section {
     cursor: pointer;
 }
 
-.logo-icon {
-    color: var(--primary-color); /* Deixa o ícone roxo */
-    font-weight: 700; /* Deixa o ícone um pouco mais grosso */
-    margin-right: 8px; /* Adiciona um pequeno espaço entre o ícone e o texto */
-}
-
-.logo-text {
-    color: var(--primary-color); /* Garante que o texto fique branco */
-}
-
-/* --- SEÇÃO HERO --- */
 /* --- SEÇÃO HERO --- */
 .hero {
     height: 100vh;

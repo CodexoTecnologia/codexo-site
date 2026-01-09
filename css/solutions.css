@@ -1,0 +1,73 @@
+/* --- SEÇÃO SOLUÇÕES --- */
+.solutions {
+    background-color: var(--dark-color);
+    padding: 6rem 0;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-card {
+    background-color: var(--card-bg-color);
+    padding: 2.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(127, 90, 240, 0.3);
+}
+
+.solution-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), #55305c);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+.solution-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--light-color);
+}
+
+.solution-card p {
+    color: var(--grey-color);
+    line-height: 1.8;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .solution-card {
+        padding: 2rem;
+    }
+
+    .solution-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    .solution-card h3 {
+        font-size: 1.2rem;
+    }
+}

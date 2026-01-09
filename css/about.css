@@ -1,0 +1,19 @@
+/* --- SEÇÃO SOBRE NÓS --- */
+.about {
+    background-color: var(--card-bg-color);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}

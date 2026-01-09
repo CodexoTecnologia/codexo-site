@@ -3,157 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codexo - Soluções em Software Personalizado</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Meta Tags -->
+    <title>Codexo - Desenvolvimento de Software Sob Medida | Transforme sua Ideia em Realidade</title>
+    <meta name="description" content="Desenvolvimento de software sob medida. A Codexo transforma ideias em realidade digital com soluções inovadoras e tecnologia de ponta.">
+    <meta name="keywords" content="desenvolvimento de software, software sob medida, desenvolvimento web, aplicativos, tecnologia, inovação, Codexo, automação, sistemas web, gestão empresarial">
+    <meta name="author" content="Codexo">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://codexo.com.br">
+    <meta name="theme-color" content="#7F5AF0">
+    
+
+    
+
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="logo_codexo_roxo_principal.svg" type="image/svg+xml">
-    <link rel="alternate icon" href="logo_codexo_roxo_principal.png" type="image/png">
-    <link rel="apple-touch-icon" href="logo_codexo_roxo_principal.png">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/logo_codexo_roxo_principal.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="assets/logo_codexo_roxo_principal.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/logo_codexo_roxo_principal.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/partners.css">
+    <link rel="stylesheet" href="css/values.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <div id="preloader" aria-label="Carregando conteúdo">
         <div class="loader"></div>
     </div>
 
     <!-- Progress Bar -->
-    <div class="scroll-progress-bar"></div>
+    <div class="scroll-progress-bar" role="progressbar" aria-label="Progresso de scroll da página"></div>
 
-    <header class="navbar">
-        <div class="container">
-            <a href="#inicio" class="logo">
-				<img src="logo_codexo_nome_branco.svg" alt="Codexo" class="logo-img" type="image/svg+xml">
-			</a>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#processo">Nosso Processo</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
+    <!-- Web Components -->
+    <header-component></header-component>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="animate-on-scroll">Transformamos Ideias em Realidade Digital.</h1>
-                    <p class="animate-on-scroll">Criamos softwares sob medida que impulsionam o crescimento e a eficiência da sua empresa. Utilizamos inovação, design e tecnologia para resolver seus desafios mais complexos.</p>
-                    <a href="#servicos" class="btn btn-secondary animate-on-scroll">Conheça Nossas Soluções</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="servicos" class="services">
-            <div class="container">
-                <h2 class="section-title animate-on-scroll">Soluções que Criamos para Você</h2>
-                <div class="services-grid">
-                    <div class="service-card animate-on-scroll">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Sistemas Web Personalizados</h3>
-                        <p>Plataformas robustas e escaláveis, desde painéis administrativos a sistemas complexos de gestão (ERP/CRM), acessíveis de qualquer lugar.</p>
-                        <div class="card-overlay">
-                            <span class="overlay-text">Saiba Mais <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                    <div class="service-card animate-on-scroll">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Aplicativos Mobile (iOS/Android)</h3>
-                        <p>Desenvolvemos aplicativos nativos e híbridos com foco total na experiência do usuário, conectando sua marca ao seu cliente na palma da mão.</p>
-                        <div class="card-overlay">
-                            <span class="overlay-text">Saiba Mais <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                    <div class="service-card animate-on-scroll">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Integração e Automação</h3>
-                        <p>Conectamos suas ferramentas existentes, automatizamos processos manuais e otimizamos seu fluxo de trabalho para máxima produtividade.</p>
-                        <div class="card-overlay">
-                            <span class="overlay-text">Saiba Mais <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main role="main">
+        <hero-component></hero-component>
         
-        <section id="processo" class="process">
-            <div class="container">
-                <h2 class="section-title animate-on-scroll">Nosso Caminho para o Sucesso</h2>
-                <div class="process-timeline">
-                    <div class="process-step animate-on-scroll">
-                        <div class="process-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4>1. Análise e Estratégia</h4>
-                        <p>Mergulhamos no seu negócio para entender seus objetivos e desafios. Definimos juntos o escopo e a estratégia do projeto.</p>
-                    </div>
-                    <div class="process-step animate-on-scroll">
-                        <div class="process-icon"><i class="fas fa-pencil-ruler"></i></div>
-                        <h4>2. Design (UI/UX)</h4>
-                        <p>Criamos interfaces intuitivas e modernas, focadas na melhor experiência para o usuário final, através de protótipos interativos.</p>
-                    </div>
-                    <div class="process-step animate-on-scroll">
-                        <div class="process-icon"><i class="fas fa-code"></i></div>
-                        <h4>3. Desenvolvimento Ágil</h4>
-                        <p>Codificamos sua solução com as melhores tecnologias, em ciclos rápidos que permitem feedbacks e ajustes constantes.</p>
-                    </div>
-                    <div class="process-step animate-on-scroll">
-                        <div class="process-icon"><i class="fas fa-rocket"></i></div>
-                        <h4>4. Lançamento e Suporte</h4>
-                        <p>Implementamos o software, treinamos sua equipe e oferecemos suporte contínuo para garantir performance e evolução.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <partners-component></partners-component>
 
-        <section id="sobre" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <h2 class="section-title animate-on-scroll">Somos a Codexo.</h2>
-                    <p class="animate-on-scroll">Nascemos da paixão por tecnologia e da vontade de resolver problemas reais. Não somos apenas desenvolvedores; somos parceiros estratégicos que se dedicam ao sucesso do seu negócio. Nosso time de 5 especialistas une criatividade e expertise técnica para entregar software que não apenas funciona, mas encanta.</p>
-                </div>
-            </div>
-        </section>
+        <values-component></values-component>
 
-        <section id="contato" class="contact">
-            <div class="container">
-                <h2 class="section-title animate-on-scroll">Vamos Conversar?</h2>
-                <p class="animate-on-scroll">Envie-nos uma mensagem e vamos descobrir como a Codexo pode ajudar a levar sua empresa para o próximo nível.</p>
-                <!-- Alterado apenas formulário e incluído retorno se foi enviado e-mail com sucesso -->
-                <form class="contact-form animate-on-scroll" action="https://formspree.io/f/xnnberyp" method="POST">
-                    <input type="text" name="name" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
-                    <textarea name="message" placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">
-                        <span class="btn-text">Enviar Mensagem</span>
-                        <span class="btn-loader" style="display: none;">
-                            <i class="fas fa-circle-notch fa-spin"></i> Enviando...
-                        </span>
-                    </button>
-                    <div class="form-message" style="display: none;"></div>
-                </form>
-            </div>
-        </section>
+        <solutions-component></solutions-component>
+
+        <about-component></about-component>
+
+        <contact-component></contact-component>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Codexo. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/codexo-tecnologia" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/CodexoTecnologiaLTDA" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/codexotecnologia?igsh=ZnJqeTBiZHAzNW14" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
+    <footer-component></footer-component>
     <!-- Botão Voltar ao Topo -->
     <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
@@ -162,11 +79,28 @@
     <!-- Botão WhatsApp Fixo -->
     <a href="https://wa.me/5541995656346?text=Olá! Gostaria de saber mais sobre os serviços da Codexo." 
        class="whatsapp-float" 
-       target="_blank" 
+       target="_blank"
+       rel="noopener noreferrer"
        aria-label="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <!-- Componentes -->
+    <script src="js/header.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/partners.js"></script>
+    <script src="js/values.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/footer.js"></script>
+    
+    <!-- SEO -->
+    <script src="SEO/structured-data.js"></script>
+    <script src="SEO/meta-tags.js"></script>
+    <script src="SEO/performance.js"></script>
+    
+    <!-- Utilitários -->
+    <script src="js/script.js"></script>
 </body>
 </html>
